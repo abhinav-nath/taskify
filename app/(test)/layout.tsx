@@ -1,7 +1,13 @@
 import React from "react";
 
 const TestLayout = ({ children }: { children: React.ReactNode }) => {
-  return <div className="bg-rose-500 h-full">{children}</div>;
+  return (
+    <div className="h-full">
+      <div>This is a Navbar</div>
+      <hr />
+      {children}
+    </div>
+  );
 };
 
 export default TestLayout;
